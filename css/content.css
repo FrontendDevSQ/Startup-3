@@ -1,0 +1,113 @@
+.content {
+    position: relative;
+    height: 540px;
+    background-image: url('../images/img 2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    overflow: hidden;
+  }
+
+  /* Overlay layer */
+  .content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(47, 24, 147, 0.5);
+    z-index: 0;
+  }
+
+  .free-sample,
+  .title,
+  .subtitle {
+    position: relative;
+    z-index: 1;
+  }
+
+  .free-sample {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    line-height: 26px;
+    margin-bottom: 0.75rem;
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1rem 0;
+    max-width: none;
+    white-space: nowrap;
+  }
+
+  .subtitle {
+    font-size: 1.65rem;
+    font-weight: 500;
+    max-width: none;
+    white-space: nowrap;
+    line-height: 2;
+    opacity: 0.85;
+  }
+
+  @media(max-width: 1024px) {
+    .content {
+    height: 540px;
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 3rem;
+    white-space: normal;
+    max-width: 90vw;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    white-space: normal;
+    max-width: 90vw;
+  }
+  
+}
+
+@media(max-width: 768px) {
+   .content {
+    height: 500px;
+    min-height: 220px;
+    padding: 1rem 0.5rem;
+  }
+  .title {
+    font-size: 2rem;
+    white-space: normal;
+    max-width: 98vw;
+  }
+  .subtitle {
+    font-size: 1rem;
+    white-space: normal;
+    max-width: 110vw;
+  }
+}
+
+@media(max-width: 480px) {
+    .content {
+    height: 500px;
+    min-height: 120px;
+    padding: 0.5rem 0.2rem;
+  }
+  .title {
+    font-size: 1.7rem;
+    white-space: normal;
+    max-width: 100vw;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+    white-space: normal;
+    max-width: 50vw;
+  }
+}

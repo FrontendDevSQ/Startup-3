@@ -1,0 +1,123 @@
+  /*form section*/
+.landing-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 18rem; 
+  background: url('../images/img 2.jpg') no-repeat center/cover;
+  overflow: hidden;
+}
+
+/* Overlay */
+.landing-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(47, 24, 147, 0.5);
+  z-index: 0;
+}
+
+.text-section,
+.form-section {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 50%;   
+  margin: 0;       
+}
+
+.text-section h1 {
+  font-size: 5rem;
+  max-width: 100vw;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.text-section p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Right form image */
+.form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-image {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15)
+}
+
+@media (max-width: 1200px) {
+  .landing-container {
+    padding: 0 6rem;
+  }
+  .text-section h1 {
+    font-size: 3.5rem;
+  }
+  .text-section p {
+    font-size: 1.5rem;
+  }
+  .form-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 9rem 1.5rem;
+    min-height: 80vh;
+    align-items: flex-start;
+  }
+  .text-section, .form-section {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 6rem;
+    align-items: center;
+    text-align: center;
+  }
+  .form-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-section h1 {
+    font-size: 2.5rem;
+  }
+  .text-section p {
+    font-size: 1.2rem;
+    max-width: 90vw;
+  }
+  .form-image {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-container {
+    padding: 8rem 0.5rem;
+    min-height: 60vh;
+  }
+  .text-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .text-section p {
+    font-size: 1rem;
+    max-width: 98vw;
+  }
+  .form-image {
+    max-width: 140px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  }
+}

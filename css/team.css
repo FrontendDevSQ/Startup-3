@@ -1,0 +1,150 @@
+.startup-crew {
+    background-color: rgba(47, 24, 147, 1);
+    color: #fff;
+    padding: 100px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.crew-text {
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.crew-text h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.crew-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.crew-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 100px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 1024px) {
+    .startup-crew {
+        padding: 60px;
+    }
+
+    .crew-profiles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .startup-crew {
+        padding: 40px 20px;
+    }
+
+    .crew-text {
+        margin-bottom: 40px;
+    }
+
+    .crew-text h2 {
+        font-size: 32px;
+    }
+
+    .crew-profiles {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-card {
+        align-items: center; /* Center profiles on mobile */
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+  .startup-crew {
+    padding: 20px 5px;
+    align-items: center;
+  }
+  .crew-text {
+    max-width: 98vw;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .crew-text h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .crew-text p {
+    font-size: 12px;
+  }
+  .crew-profiles {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+    justify-items: center;
+  }
+  .profile-card {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+  .profile-name {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .profile-title {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .social-links {
+    gap: 8px;
+  }
+  .social-icon i {
+    font-size: 10px;
+  }
+}
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.profile-title {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon i {
+    font-size: 15px;
+    color: #ffffff;
+}
